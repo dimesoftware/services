@@ -10,11 +10,10 @@
   <PropertyGroup>
     <VersionPrefix>1.0.1</VersionPrefix>
     <Authors>Dimenics</Authors>
-    <TargetFrameworks>netstandard2.0;netcoreapp2.0;netcoreapp1.1;net461</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net461</TargetFrameworks>
     <AssemblyName>Dime.Services</AssemblyName>
     <PackageId>Dime.Services</PackageId>
     <PackageIconUrl>http://dimenuget.azurewebsites.net/Images/dimenuget.png</PackageIconUrl>
-    <RuntimeFrameworkVersion Condition=" '$(TargetFramework)' == 'netcoreapp1.1' ">1.1.1</RuntimeFrameworkVersion>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
@@ -22,12 +21,13 @@
     <IncludeSymbols>True</IncludeSymbols>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.2.4</Version>
-    <Copyright>Copyright © 2017</Copyright>
+    <Copyright>Copyright © 2020 </Copyright>
     <PackageProjectUrl>http://www.dimenics.com/products/dime-scheduler/</PackageProjectUrl>
     <RepositoryUrl>https://dimenicsbe.visualstudio.com/DefaultCollection/Dime.Scheduler V2</RepositoryUrl>
-    <RepositoryType>Visual Studio Team Services</RepositoryType>
+    <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
     <Description>Contracts for implementing a generic service layer</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">

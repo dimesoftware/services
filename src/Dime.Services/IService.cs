@@ -3,7 +3,7 @@
 namespace Dime
 {
     /// <summary>
-    /// Base interface for the service framework
+    /// Represents a service
     /// </summary>
     public interface IService : IDisposable
     {

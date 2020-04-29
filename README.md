@@ -1,20 +1,58 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Dime.Services
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/System%20-%20MASTER%20-%20CI?branchName=master) [![Dime.Services package in Dime.Scheduler feed in Azure Artifacts](https://feeds.dev.azure.com/dimenicsbe/_apis/public/Packaging/Feeds/a7b896fd-9cd8-4291-afe1-f223483d87f0/Packages/f6766b4e-2b3d-4874-bd8e-f1fb9fa8296c/Badge)](https://dev.azure.com/dimenicsbe/Utilities/_packaging?_a=package&feed=a7b896fd-9cd8-4291-afe1-f223483d87f0&package=f6766b4e-2b3d-4874-bd8e-f1fb9fa8296c&preferRelease=true)
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Introduction
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+Contracts for the service layer of any project.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Getting Started
+
+- You must have Visual Studio 2019 Community or higher.
+- The dotnet cli is also highly recommended.
+
+## About this project
+
+The most notable types in this assembly include:
+
+- `IQueryService<T>`: matches the R in CRUD operators
+- `ICommandService<T>`: matches the CUD in CRUD operations
+- `IService<T>`: Defines the capabilities of both `IQueryService<T>` and `ICommandService<T>`
+- `IServiceLocator`: Defines how to instantiate service class instances
+
+## Build and Test
+
+- Run dotnet restore
+- Run dotnet build
+- Run dotnet test
+
+## Installation
+
+Use the package manager NuGet to install Dime.System:
+
+`dotnet add package Dime.Services`
+
+## Usage
+
+``` csharp
+using Dime;
+
+public class CustomerService : ICustomerService<Customer>
+{
+  public async Task<IEnumerable<CustomerDto>> GetAllAsync<CustomerDto>()
+  {
+      IEnumerable<Customer> customers = await this.Context.Customers.ToListAsync();
+      return customers.Select(x => this.Mapper.Map<CustomerDto>(x));
+  }
+}
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
