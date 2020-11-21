@@ -1,32 +1,34 @@
+trigger:
+  - master
+
 pool:
-  name: Azure Pipelines
+  vmImage: 'windows-latest'
+
+variables:
+  buildConfiguration: 'Release'
+
 steps:
-- task: UseDotNet@2
-  displayName: 'Use .NET Core sdk'
-  inputs:
-    packageType: sdk
-    version: 5.x
-    installationPath: $(Agent.ToolsDirectory)/dotnet
+  - task: UseDotNet@2
+    displayName: 'Use .NET 5'
+    inputs:
+      packageType: 'sdk'
+      version: '5.x'
 
-- task: NuGetCommand@2
-  displayName: 'NuGet restore'
-  inputs:
-    feedsToUse: config
-    nugetConfigPath: src/Nuget.config
+  - task: DotNetCoreCLI@2
+    displayName: 'dotnet restore'
+    inputs:
+      command: restore
+      projects: '**/*.csproj'    
 
-- task: DotNetCoreCLI@2
-  displayName: 'dotnet restore'
-  inputs:
-    command: restore
-    projects: '**/*.csproj'
+  - task: DotNetCoreCLI@2
+    displayName: 'dotnet build'
+    inputs:
+      projects: '**/*.sln'
+      arguments: '--configuration $(buildConfiguration)'
 
-- task: DotNetCoreCLI@2
-  displayName: 'dotnet build'
-  inputs:
-    projects: '**/*.sln'
-
-- task: DotNetCoreCLI@2
-  displayName: 'dotnet test'
-  inputs:
-    command: test
-    projects: '**/*.csproj'
+  - task: DotNetCoreCLI@2
+    displayName: Test
+    inputs:
+      command: test
+      projects: '**/*.csproj'
+      arguments: '--configuration $(BuildConfiguration) --collect "Code Coverage"'
