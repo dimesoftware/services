@@ -1,4 +1,6 @@
-# Dime.Services
+<p align="center"><img src="assets/box.svg?raw=true" width="350" alt="Logo"></p>
+
+# Services
 
 ![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/Services%20-%20MAIN%20-%20CI?branchName=master) [![Dime.Services package in Dime.Scheduler feed in Azure Artifacts](https://feeds.dev.azure.com/dimenicsbe/_apis/public/Packaging/Feeds/a7b896fd-9cd8-4291-afe1-f223483d87f0/Packages/f6766b4e-2b3d-4874-bd8e-f1fb9fa8296c/Badge)](https://dev.azure.com/dimenicsbe/Utilities/_packaging?_a=package&feed=a7b896fd-9cd8-4291-afe1-f223483d87f0&package=f6766b4e-2b3d-4874-bd8e-f1fb9fa8296c&preferRelease=true)
 
@@ -49,9 +51,9 @@ public class CustomerService : ICustomerService<Customer>
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
 
-Please make sure to update tests as appropriate.
+Pull requests are welcome. Please check out the contribution and code of conduct guidelines.
 
 ## License
 
