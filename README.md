@@ -2,7 +2,7 @@
 
 # Services
 
-[![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.services?branchName=master)](https://dev.azure.com/dimenicsbe/Utilities/_build/latest?definitionId=179&branchName=master) [![Dime.Services package in Dime.Scheduler feed in Azure Artifacts](https://feeds.dev.azure.com/dimenicsbe/_apis/public/Packaging/Feeds/a7b896fd-9cd8-4291-afe1-f223483d87f0/Packages/f6766b4e-2b3d-4874-bd8e-f1fb9fa8296c/Badge)](https://dev.azure.com/dimenicsbe/Utilities/_packaging?_a=package&feed=a7b896fd-9cd8-4291-afe1-f223483d87f0&package=f6766b4e-2b3d-4874-bd8e-f1fb9fa8296c&preferRelease=true)
+[![Build Status](https://dev.azure.com/dimesoftware/Utilities/_apis/build/status/dimenics.services?branchName=master)](https://dev.azure.com/dimesoftware/Utilities/_build/latest?definitionId=179&branchName=master) [![Dime.Services package in Dime.Scheduler feed in Azure Artifacts](https://feeds.dev.azure.com/dimesoftware/_apis/public/Packaging/Feeds/a7b896fd-9cd8-4291-afe1-f223483d87f0/Packages/f6766b4e-2b3d-4874-bd8e-f1fb9fa8296c/Badge)](https://dev.azure.com/dimesoftware/Utilities/_packaging?_a=package&feed=a7b896fd-9cd8-4291-afe1-f223483d87f0&package=f6766b4e-2b3d-4874-bd8e-f1fb9fa8296c&preferRelease=true)
 
 ## Introduction
 

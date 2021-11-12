@@ -23,7 +23,7 @@
     <Version>1.0.4</Version>
     <Copyright>Copyright © 2020 </Copyright>
     <PackageProjectUrl>http://www.dimescheduler.com</PackageProjectUrl>
-    <RepositoryUrl>https://dimenicsbe.visualstudio.com/DefaultCollection/Dime.Scheduler V2</RepositoryUrl>
+    <RepositoryUrl>https://dimesoftware.visualstudio.com/DefaultCollection/Dime.Scheduler V2</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
     <Description>Contracts for implementing a generic service layer</Description>
