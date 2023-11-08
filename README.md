@@ -1,8 +1,13 @@
 <p align="center"><img src="assets/box.svg?raw=true" width="350" alt="Logo"></p>
 
-# Services
+<div align="center">
+<img src="https://dev.azure.com/dimesoftware/Utilities/_apis/build/status/dimenics.services?branchName=master"/>
+<img src="https://feeds.dev.azure.com/dimesoftware/_apis/public/Packaging/Feeds/a7b896fd-9cd8-4291-afe1-f223483d87f0/Packages/f6766b4e-2b3d-4874-bd8e-f1fb9fa8296c/Badge" />
+</div>
 
-[![Build Status](https://dev.azure.com/dimesoftware/Utilities/_apis/build/status/dimenics.services?branchName=master)](https://dev.azure.com/dimesoftware/Utilities/_build/latest?definitionId=179&branchName=master) [![Dime.Services package in Dime.Scheduler feed in Azure Artifacts](https://feeds.dev.azure.com/dimesoftware/_apis/public/Packaging/Feeds/a7b896fd-9cd8-4291-afe1-f223483d87f0/Packages/f6766b4e-2b3d-4874-bd8e-f1fb9fa8296c/Badge)](https://dev.azure.com/dimesoftware/Utilities/_packaging?_a=package&feed=a7b896fd-9cd8-4291-afe1-f223483d87f0&package=f6766b4e-2b3d-4874-bd8e-f1fb9fa8296c&preferRelease=true)
+<div align="center">
+<h1>Services</h1>
+</div>
 
 ## Introduction
 
@@ -10,7 +15,7 @@ Contracts for the service layer of any project.
 
 ## Getting Started
 
-- You must have Visual Studio 2019 Community or higher.
+- You must have Visual Studio 2022 Community or higher.
 - The dotnet cli is also highly recommended.
 
 ## About this project
